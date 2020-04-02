@@ -1,4 +1,2 @@
-﻿  Example2.cpp
-C:\Users\aubva\source\repos\InheritanceExample\Example2\Example2.cpp(102,1): warning C4250: eagle: наследуется "bird::bird::_print" через превосходство
-C:\Users\aubva\source\repos\InheritanceExample\Example2\Example2.cpp(59): message : см. объявление "bird::_print"
-  Example2.vcxproj -> C:\Users\aubva\source\repos\InheritanceExample\Debug\Example2.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(440,5): warning MSB8003: The VCToolsInstallDir property is not defined. Some build tools may not be found.
+TRACKER : error TRK0005: не удалось обнаружить "CL.exe". Не удается найти указанный файл.

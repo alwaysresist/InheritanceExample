@@ -20,7 +20,7 @@ public:
 	}
 	~B2() { cout << "object of " << typeid(*this).name() << " was destroyed\n"; }
 };
-class D1 :virtual public B1 {
+class D1 : public B1 {
 	int b;
 public:
 
@@ -30,7 +30,7 @@ public:
 	}
 	~D1() { cout << "object of " << typeid(*this).name() << " was destroyed\n"; }
 };
-class D2 : virtual protected B1, public B2 {
+class D2 : protected B1, public B2 {
 	int c;
 public:
 	D2(int x, int y, int i) :B1(y), B2(i) {
@@ -39,7 +39,7 @@ public:
 	}
 	~D2() { cout << "object of " << typeid(*this).name() << " was destroyed\n"; }
 };
-class D3 :public D1, virtual protected D2 {
+class D3 :public D1, protected D2 {
 	int d;
 public:
 	D3(int x, int y, int z, int i, int j, int k) :D1(y, z), D2(i, j, k) {
